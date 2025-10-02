@@ -39,7 +39,7 @@ export default function Contact() {
               <Mail className="mr-2 h-5 w-5" /> Enviar un Correo
             </a>
           </Button>
-          <Button asChild size="icon" variant="outline" className="w-12 h-12 sm:w-auto sm:h-auto rounded-full p-3 sm:rounded-md">
+          <Button asChild size="icon" className="w-12 h-12 rounded-full bg-[#25D366] text-white hover:bg-[#128C7E] transition-transform duration-300 hover:scale-110">
             <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
               <WhatsappIcon className="h-6 w-6" />
             </a>
