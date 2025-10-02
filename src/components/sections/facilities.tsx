@@ -11,10 +11,10 @@ export default function Facilities() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
-            Our World-Class Facilities
+            Nuestras Instalaciones de Clase Mundial
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Equipped with the latest technology in a comfortable and clean environment.
+            Equipadas con la última tecnología en un ambiente cómodo y limpio.
           </p>
         </div>
         <Carousel

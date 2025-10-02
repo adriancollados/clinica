@@ -2,11 +2,11 @@ import { Stethoscope } from "lucide-react";
 
 export default function Header() {
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Facilities", href: "#facilities" },
-    { name: "Location", href: "#location" },
-    { name: "Contact", href: "#contact" },
+    { name: "Nosotros", href: "#about" },
+    { name: "Servicios", href: "#services" },
+    { name: "Instalaciones", href: "#facilities" },
+    { name: "Ubicación", href: "#location" },
+    { name: "Contacto", href: "#contact" },
   ];
 
   return (
@@ -14,7 +14,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <a href="#" className="flex items-center gap-2">
           <Stethoscope className="h-6 w-6 text-primary" />
-          <span className="text-xl font-bold font-headline text-primary">Clinic</span>
+          <span className="text-xl font-bold font-headline text-primary">Clínica</span>
         </a>
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (

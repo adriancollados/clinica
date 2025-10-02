@@ -10,10 +10,10 @@ export default function Location() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
-            Find Us Here
+            Encuéntranos Aquí
           </h2>
           <p className="text-lg text-muted-foreground">
-            We are conveniently located in the heart of Wellness City.
+            Estamos convenientemente ubicados en el corazón de Wellness City.
           </p>
         </div>
         <Card className="overflow-hidden shadow-lg">

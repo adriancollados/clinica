@@ -20,14 +20,14 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 text-center px-4 space-y-6">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tight">
-          Your Health, Our Priority
+          Tu Salud, Nuestra Prioridad
         </h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/90">
-          Experience world-class healthcare with a compassionate touch. Our team of experts is dedicated to your well-being.
+          Experimenta una atención médica de clase mundial con un toque compasivo. Nuestro equipo de expertos está dedicado a tu bienestar.
         </p>
         <div>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Book an Appointment
+            Reservar una Cita
           </Button>
         </div>
       </div>

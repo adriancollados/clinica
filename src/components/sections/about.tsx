@@ -5,21 +5,21 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const teamMembers = [
   {
     id: "employee-1",
-    name: "Dr. Emily Carter",
-    title: "Chief Medical Officer",
-    bio: "Dr. Carter has over 20 years of experience in internal medicine and is dedicated to providing patient-centered care. She founded our clinic with the vision of creating a space where technology and compassion meet.",
+    name: "Dra. Emily Carter",
+    title: "Directora Médica",
+    bio: "La Dra. Carter tiene más de 20 años de experiencia en medicina interna y se dedica a brindar atención centrada en el paciente. Fundó nuestra clínica con la visión de crear un espacio donde la tecnología y la compasión se encuentran.",
   },
   {
     id: "employee-2",
     name: "Dr. Ben Adams",
-    title: "Head of Cardiology",
-    bio: "A leading expert in cardiovascular health, Dr. Adams specializes in advanced diagnostic and therapeutic procedures. His research in preventative cardiology has been published in numerous medical journals.",
+    title: "Jefe de Cardiología",
+    bio: "Un experto líder en salud cardiovascular, el Dr. Adams se especializa en procedimientos diagnósticos y terapéuticos avanzados. Su investigación en cardiología preventiva ha sido publicada en numerosas revistas médicas.",
   },
   {
     id: "employee-3",
     name: "Sarah Jenkins, RN",
-    title: "Head Nurse",
-    bio: "Sarah leads our nursing team with a focus on patient comfort and safety. With 15 years of experience in various clinical settings, she ensures our standards of care are second to none.",
+    title: "Enfermera Jefe",
+    bio: "Sarah lidera nuestro equipo de enfermería con un enfoque en la comodidad y seguridad del paciente. Con 15 años de experiencia en diversos entornos clínicos, se asegura de que nuestros estándares de atención sean insuperables.",
   },
 ];
 
@@ -30,15 +30,15 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
-              About Our Clinic
+              Sobre Nuestra Clínica
             </h2>
             <p className="text-lg text-muted-foreground">
-              Founded on the principles of compassion, innovation, and excellence, our clinic has been serving the community for over a decade. We believe in a holistic approach to healthcare, where every patient is treated with the utmost respect and personalized attention. Our state-of-the-art facility and expert medical team are here to support you on your journey to better health.
+              Fundada en los principios de compasión, innovación y excelencia, nuestra clínica ha estado sirviendo a la comunidad por más de una década. Creemos en un enfoque holístico de la atención médica, donde cada paciente es tratado con el máximo respeto y atención personalizada. Nuestras instalaciones de última generación y nuestro equipo médico experto están aquí para apoyarlo en su viaje hacia una mejor salud.
             </p>
           </div>
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold font-headline text-primary">
-              Meet Our Team
+              Conoce a Nuestro Equipo
             </h3>
             <Accordion type="single" collapsible className="w-full">
               {teamMembers.map((member) => {
