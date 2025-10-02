@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useState } from "react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { cn } from "@/lib/utils";
+import { Card, CardContent } from "@/components/ui/card";
 
 const teamMembers = [
   {
@@ -13,7 +17,7 @@ const teamMembers = [
     id: "employee-2",
     name: "Dr. Ben Adams",
     title: "Jefe de Cardiología",
-    bio: "Un experto líder en salud cardiovascular, el Dr. Adams se especializa en procedimientos diagnósticos y terapéuticos avanzados. Su investigación en cardiología preventiva ha sido publicada en numerosas revistas médicas.",
+    bio: "Un experto líder en salud cardiovascular, el Dr. Adams se especializa en procedimientos diagnósticos y terapéuticos avanzados. Su investigación en cardiología preventiva ha sido publicada en numerous revistas médicas.",
   },
   {
     id: "employee-3",
@@ -24,51 +28,68 @@ const teamMembers = [
 ];
 
 export default function About() {
+  const [selectedMember, setSelectedMember] = useState<string | null>(teamMembers[0].id);
+
   return (
     <section id="about" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
+        <div className="grid md:grid-cols-1 gap-12 items-start">
+          <div className="space-y-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
               Sobre Nuestra Clínica
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Fundada en los principios de compasión, innovación y excelencia, nuestra clínica ha estado sirviendo a la comunidad por más de una década. Creemos en un enfoque holístico de la atención médica, donde cada paciente es tratado con el máximo respeto y atención personalizada. Nuestras instalaciones de última generación y nuestro equipo médico experto están aquí para apoyarlo en su viaje hacia una mejor salud.
             </p>
           </div>
           <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold font-headline text-primary">
+            <h3 className="text-2xl md:text-3xl font-bold font-headline text-primary text-center">
               Conoce a Nuestro Equipo
             </h3>
-            <Accordion type="single" collapsible className="w-full">
+            <div className="flex flex-col md:flex-row gap-4 h-[450px] md:h-[400px]">
               {teamMembers.map((member) => {
                 const memberImage = PlaceHolderImages.find((img) => img.id === member.id);
+                const isSelected = selectedMember === member.id;
+
                 return (
-                  <AccordionItem value={member.id} key={member.id}>
-                    <AccordionTrigger className="text-lg font-semibold hover:no-underline">
-                      {member.name} - <span className="text-muted-foreground font-normal ml-2">{member.title}</span>
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                        {memberImage && (
-                          <div className="flex-shrink-0">
-                            <Image
-                              src={memberImage.imageUrl}
-                              alt={`Portrait of ${member.name}`}
-                              width={100}
-                              height={100}
-                              className="rounded-full object-cover"
-                              data-ai-hint={memberImage.imageHint}
-                            />
-                          </div>
-                        )}
-                        <p className="text-muted-foreground">{member.bio}</p>
+                  <Card
+                    key={member.id}
+                    className={cn(
+                      "relative overflow-hidden cursor-pointer transition-all duration-500 ease-in-out",
+                      isSelected ? "flex-[5]" : "flex-[1]"
+                    )}
+                    onClick={() => setSelectedMember(member.id)}
+                  >
+                    {memberImage && (
+                      <Image
+                        src={memberImage.imageUrl}
+                        alt={`Portrait of ${member.name}`}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={memberImage.imageHint}
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-black/60" />
+                    <CardContent className="relative z-10 flex flex-col justify-end h-full p-6 text-white">
+                      <div className="transition-opacity duration-500">
+                        <h4 className="text-xl font-bold font-headline">{member.name}</h4>
+                        <p className="text-sm text-white/80">{member.title}</p>
+                        <div
+                          className={cn(
+                            "transition-all duration-500 ease-in-out overflow-hidden max-h-0",
+                            {
+                              "max-h-40 pt-2": isSelected,
+                            }
+                          )}
+                        >
+                          <p className="text-white/90">{member.bio}</p>
+                        </div>
                       </div>
-                    </AccordionContent>
-                  </AccordionItem>
+                    </CardContent>
+                  </Card>
                 );
               })}
-            </Accordion>
+            </div>
           </div>
         </div>
       </div>
