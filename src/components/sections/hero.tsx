@@ -26,8 +26,8 @@ export default function Hero() {
           Experimenta una atención médica de clase mundial con un toque compasivo. Nuestro equipo de expertos está dedicado a tu bienestar.
         </p>
         <div>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Reservar una Cita
+          <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <a href="#contact">Reservar una Cita</a>
           </Button>
         </div>
       </div>

@@ -23,7 +23,7 @@ function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-background">
+    <section id="contact" className="py-16 md:py-24 bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
@@ -39,9 +39,9 @@ export default function Contact() {
               <Mail className="mr-2 h-5 w-5" /> Enviar un Correo
             </a>
           </Button>
-          <Button asChild size="icon" className="w-12 h-12 rounded-full bg-[#25D366] text-white hover:bg-[#128C7E] transition-transform duration-300 hover:scale-110">
+          <Button asChild size="lg" className="w-full sm:w-auto bg-[#25D366] text-white hover:bg-[#128C7E] transition-transform duration-300 hover:scale-105">
             <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-              <WhatsappIcon className="h-6 w-6" />
+              <WhatsappIcon className="mr-2 h-5 w-5" /> WhatsApp
             </a>
           </Button>
         </div>
