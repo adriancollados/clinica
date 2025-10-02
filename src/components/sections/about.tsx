@@ -28,10 +28,10 @@ const teamMembers = [
 ];
 
 export default function About() {
-  const [selectedMember, setSelectedMember] = useState<string | null>(teamMembers[0].id);
+  const [selectedMember, setSelectedMember] = useState<string | null>(null);
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-secondary">
+    <section id="about" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-1 gap-12 items-start">
           <div className="space-y-4 text-center">
@@ -58,7 +58,7 @@ export default function About() {
                       "relative overflow-hidden cursor-pointer transition-all duration-500 ease-in-out",
                       isSelected ? "flex-[5]" : "flex-[1]"
                     )}
-                    onClick={() => setSelectedMember(member.id)}
+                    onClick={() => setSelectedMember(prev => prev === member.id ? null : member.id)}
                   >
                     {memberImage && (
                       <Image
@@ -69,7 +69,7 @@ export default function About() {
                         data-ai-hint={memberImage.imageHint}
                       />
                     )}
-                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                     <CardContent className="relative z-10 flex flex-col justify-end h-full p-6 text-white">
                       <div className="transition-opacity duration-500">
                         <h4 className="text-xl font-bold font-headline">{member.name}</h4>
