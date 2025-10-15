@@ -1,22 +1,73 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Stethoscope, HeartPulse, Brain } from "lucide-react";
 import { ToothIcon, BoneIcon } from "@/components/icons";
+import Image from "next/image";
+
+const MassageIcon = (props: { className?: string }) => (
+  <Image
+    src={"/masaje%20descarga.jpeg"}
+    alt="Masajes de descarga"
+    width={100}
+    height={100}
+    className={props.className}
+  />
+);
+
+ const RehabilitacionIcon = (props: { className?: string }) => (
+  <Image
+    src={"/rehabilitacion.png"}
+    alt="Rehabilitación"
+     width={100}
+     height={100}
+    className={props.className}
+  />
+);
+const MasajesDescontracturantesIcon = (props: { className?: string }) => (
+  <Image
+    src={"/masaje.png"}
+    alt="Masajes descontracturantes"
+     width={100}
+     height={100}
+    className={props.className}
+  />
+);
+
 
 const services = [
   {
-    icon: HeartPulse,
-    title: "Cardiología",
+    icon: MassageIcon,
+    title: "Masajes de descarga",
     description: "Atención experta para tu corazón, desde exámenes preventivos hasta tratamientos avanzados para condiciones complejas.",
   },
   {
-    icon: ToothIcon,
-    title: "Odontología",
+    icon: MasajesDescontracturantesIcon,
+    title: "Masajes descontracturantes",
     description: "Servicios dentales integrales, incluyendo revisiones de rutina, procedimientos cosméticos y cuidado restaurador.",
   },
   {
-    icon: Brain,
-    title: "Neurología",
+    icon: RehabilitacionIcon,
+    title: "Rehabilitación",
     description: "Tratamiento especializado para trastornos del sistema nervioso, incluyendo cerebro, médula espinal y nervios.",
+  },
+  {
+    icon: BoneIcon,
+    title: "Estudio de la pisada",
+    description: "Atención avanzada para huesos, articulaciones, ligamentos y músculos. Te ayudamos a volver a moverte libremente.",
+  },
+  {
+    icon: BoneIcon,
+    title: "Plantillas a medida",
+    description: "Atención avanzada para huesos, articulaciones, ligamentos y músculos. Te ayudamos a volver a moverte libremente.",
+  },
+  {
+    icon: BoneIcon,
+    title: "Ortopedia",
+    description: "Atención avanzada para huesos, articulaciones, ligamentos y músculos. Te ayudamos a volver a moverte libremente.",
+  },
+  {
+    icon: BoneIcon,
+    title: "Ortopedia",
+    description: "Atención avanzada para huesos, articulaciones, ligamentos y músculos. Te ayudamos a volver a moverte libremente.",
   },
   {
     icon: BoneIcon,
@@ -41,13 +92,13 @@ export default function Services() {
           {services.map((service, index) => (
             <Card key={index} className="text-center group hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="items-center">
-                <div className="bg-primary/10 p-4 rounded-full group-hover:bg-primary transition-colors duration-300">
-                  <service.icon className="h-8 w-8 text-primary" />
+                <div className="">
+                  <service.icon className="h-32 w-32 text-primary" />
                 </div>
-                <CardTitle className="font-headline pt-4">{service.title}</CardTitle>
+                <CardTitle className="font-headline pt-4 text-base md:text-lg">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{service.description}</p>
+                <p className="text-muted-foreground text-sm">{service.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -28,11 +28,11 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+
     ],
   },
   experimental: {},
   allowedDevOrigins: [
-    '6000-firebase-studio-1759430634484.cluster-lu4mup47g5gm4rtyvhzpwbfadi.cloudworkstations.dev',
   ],
 };
 

@@ -9,21 +9,21 @@ import { Card, CardContent } from "@/components/ui/card";
 const teamMembers = [
   {
     id: "employee-1",
-    name: "Dra. Emily Carter",
-    title: "Directora Médica",
-    bio: "La Dra. Carter tiene más de 20 años de experiencia en medicina interna y se dedica a brindar atención centrada en el paciente. Fundó nuestra clínica con la visión de crear un espacio donde la tecnología y la compasión se encuentran.",
+    name: "Dr. Javier Perez Cuartero",
+    title: "Fisioterapeuta",
+    bio: "",
   },
   {
     id: "employee-2",
-    name: "Dr. Ben Adams",
-    title: "Jefe de Cardiología",
-    bio: "Un experto líder en salud cardiovascular, el Dr. Adams se especializa en procedimientos diagnósticos y terapéuticos avanzados. Su investigación en cardiología preventiva ha sido publicada en numerous revistas médicas.",
+    name: "Dr. Jorge Perez Cuartero",
+    title: "Podológo",
+    bio: "",
   },
   {
     id: "employee-3",
-    name: "Sarah Jenkins, RN",
-    title: "Enfermera Jefe",
-    bio: "Sarah lidera nuestro equipo de enfermería con un enfoque en la comodidad y seguridad del paciente. Con 15 años de experiencia en diversos entornos clínicos, se asegura de que nuestros estándares de atención sean insuperables.",
+    name: "Dr. Adrian Perez Cuartero",
+    title: "Fisioterapeuta",
+    bio: "",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function About() {
         <div className="grid md:grid-cols-1 gap-12 items-start">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
-              Sobre Nuestra Clínica
+              Sobre nosotros
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Fundada en los principios de compasión, innovación y excelencia, nuestra clínica ha estado sirviendo a la comunidad por más de una década. Creemos en un enfoque holístico de la atención médica, donde cada paciente es tratado con el máximo respeto y atención personalizada. Nuestras instalaciones de última generación y nuestro equipo médico experto están aquí para apoyarlo en su viaje hacia una mejor salud.
@@ -44,7 +44,7 @@ export default function About() {
           </div>
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold font-headline text-primary text-center">
-              Conoce a Nuestro Equipo
+              Conoce a nuestro equipo
             </h3>
             <div className="flex flex-col md:flex-row gap-4 h-[450px] md:h-[400px]">
               {teamMembers.map((member) => {
