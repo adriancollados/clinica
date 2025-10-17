@@ -1,4 +1,6 @@
 import type { SVGProps } from "react";
+import Image from "next/image";
+import  logo  from "../../public/logo.png";
 
 export function ToothIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -40,3 +42,12 @@ export function BoneIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+export const LogoClinica = (props: { className?: string }) => (
+  <Image
+    src={logo}
+    alt="Logo Clínica Pérez Cuartero"
+     width={150}
+     height={150}
+    className={props.className}
+  />
+);

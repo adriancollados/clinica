@@ -1,14 +1,15 @@
 import { Stethoscope, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Consts } from "@/lib/constants";
+import { LogoClinica } from "@/components/icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-secondary text-secondary-foreground ">
       <div className="container mx-auto px-4 py-8 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 text-center md:text-left">
           <div className="space-y-6 flex flex-col items-center md:items-start">
             <a href="#" className="flex items-center gap-2">
-              <Stethoscope className="h-7 w-7 text-primary" />
+              <LogoClinica className="h-10 w-12 text-primary" />
               <span className="text-2xl font-bold font-headline text-primary">ClínicaPerezCuartero</span>
             </a>
             <p className="max-w-xs">
