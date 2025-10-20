@@ -1,10 +1,20 @@
+"use client";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { useState } from "react";
+
+// Librería Lightbox
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Facilities() {
   const facilityImages = PlaceHolderImages.filter(img => img.id.startsWith("facility-"));
+
+  // Estado para el lightbox
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <section id="facilities" className="py-16 md:py-24 bg-background">
@@ -25,10 +35,14 @@ export default function Facilities() {
           className="w-full"
         >
           <CarouselContent>
-            {facilityImages.map((image) => (
+            {facilityImages.map((image, index) => (
               <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
-                  <Card className="overflow-hidden">
+                  <Card className="overflow-hidden"
+                    onClick={() => {
+                        setCurrentIndex(index);
+                        setLightboxOpen(true);
+                      }}>
                     <CardContent className="p-0">
                       <div className="aspect-w-3 aspect-h-2">
                         <Image
@@ -49,6 +63,14 @@ export default function Facilities() {
           <CarouselPrevious className="ml-12" />
           <CarouselNext className="mr-12" />
         </Carousel>
+
+        {/* Lightbox */}
+        <Lightbox
+          open={lightboxOpen}
+          close={() => setLightboxOpen(false)}
+          slides={facilityImages.map(img => ({ src: img.imageUrl, title: img.description }))}
+          index={currentIndex}
+        />
       </div>
     </section>
   );

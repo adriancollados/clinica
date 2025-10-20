@@ -3,7 +3,7 @@
     {
       "id": "hero",
       "description": "A modern and welcoming clinic reception area.",
-      "imageUrl": "https://images.unsplash.com/photo-1581982231900-6a1a46b744c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzU5NDE3NDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/hero.jpg",
       "imageHint": "clinic reception"
     },
     {
@@ -24,35 +24,41 @@
       "imageUrl": "https://images.unsplash.com/photo-1691178466856-a0842c4df1c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxudXJzZSUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTQzNzIwNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "nurse portrait"
     },
-    {
-      "id": "facility-1",
-      "description": "A clean and modern patient examination room.",
-      "imageUrl": "https://images.unsplash.com/photo-1663512847531-7e1a37f5f4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXhhbWluYXRpb24lMjByb29tfGVufDB8fHx8MTc1OTQzNzIwNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "examination room"
-    },
-    {
-      "id": "facility-2",
-      "description": "Advanced medical equipment in a lab.",
-      "imageUrl": "https://images.unsplash.com/photo-1551076805-e1869033e561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc1OTM2NzczMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "medical equipment"
-    },
-    {
-      "id": "facility-3",
-      "description": "Comfortable and spacious waiting area.",
-      "imageUrl": "https://images.unsplash.com/photo-1631248082035-507d0fe8a8e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YWl0aW5nJTIwYXJlYXxlbnwwfHx8fDE3NTkzNjMzODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "waiting area"
-    },
-    {
-      "id": "facility-4",
-      "description": "A state-of-the-art surgical theater.",
-      "imageUrl": "https://images.unsplash.com/photo-1689489576187-a202ea623b8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJnaWNhbCUyMHRoZWF0ZXJ8ZW58MHx8fHwxNzU5NDM3MjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "surgical theater"
-    },
-    {
-      "id": "facility-5",
-      "description": "Physical therapy and rehabilitation center.",
-      "imageUrl": "https://images.unsplash.com/photo-1673009410488-b718d1055034?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWhhYmlsaXRhdGlvbiUyMGNlbnRlcnxlbnwwfHx8fDE3NTkzNTU1NTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rehabilitation center"
-    }
+      {
+        "id": "facility-1",
+        "imageUrl": "/home.jpg"
+      },
+      {
+        "id": "facility-2",
+        "imageUrl": "/instalaciones1.jpg"
+      },
+      {
+        "id": "facility-3",
+        "imageUrl": "/instalaciones2.jpg"
+      },
+      {
+        "id": "facility-4",
+        "imageUrl": "/instalaciones3.jpg"
+      },
+      {
+        "id": "facility-5",
+        "imageUrl": "/instalaciones4.jpg"
+      },
+      {
+        "id": "facility-6",
+        "imageUrl": "/instalaciones5.jpg"
+      },
+      {
+        "id": "facility-7",
+        "imageUrl": "/instalaciones6.jpg"
+      },
+      {
+        "id": "facility-8",
+        "imageUrl": "/instalaciones7.jpg"
+      },
+      {
+        "id": "facility-9",
+        "imageUrl": "/instalaciones8.jpg"
+      }
   ]
 }
