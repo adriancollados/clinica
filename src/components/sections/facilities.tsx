@@ -47,7 +47,7 @@ export default function Facilities() {
                       <div className="aspect-w-3 aspect-h-2">
                         <Image
                           src={image.imageUrl}
-                          alt={image.description}
+                          alt={image.imageHint}
                           width={600}
                           height={400}
                           className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
@@ -68,7 +68,7 @@ export default function Facilities() {
         <Lightbox
           open={lightboxOpen}
           close={() => setLightboxOpen(false)}
-          slides={facilityImages.map(img => ({ src: img.imageUrl, title: img.description }))}
+          slides={facilityImages.map(img => ({ src: img.imageUrl, title: img.imageHint }))}
           index={currentIndex}
         />
       </div>

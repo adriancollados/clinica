@@ -26,39 +26,48 @@
     },
       {
         "id": "facility-1",
-        "imageUrl": "/home.jpg"
+        "imageUrl": "/home.jpg",
+        "imageHint": "home"
       },
       {
         "id": "facility-2",
-        "imageUrl": "/instalaciones1.jpg"
+        "imageUrl": "/instalaciones1.jpg",
+        "imageHint": "instalaciones 1"
       },
       {
         "id": "facility-3",
-        "imageUrl": "/instalaciones2.jpg"
+        "imageUrl": "/instalaciones2.jpg",
+        "imageHint": "instalaciones 2"
       },
       {
         "id": "facility-4",
-        "imageUrl": "/instalaciones3.jpg"
+        "imageUrl": "/instalaciones3.jpg",
+        "imageHint": "instalaciones 3"
       },
       {
         "id": "facility-5",
-        "imageUrl": "/instalaciones4.jpg"
+        "imageUrl": "/instalaciones4.jpg",
+        "imageHint": "instalaciones 4"
       },
       {
         "id": "facility-6",
-        "imageUrl": "/instalaciones5.jpg"
+        "imageUrl": "/instalaciones5.jpg",
+        "imageHint": "instalaciones 5"
       },
       {
         "id": "facility-7",
-        "imageUrl": "/instalaciones6.jpg"
+        "imageUrl": "/instalaciones6.jpg",
+        "imageHint": "instalaciones 6"
       },
       {
         "id": "facility-8",
-        "imageUrl": "/instalaciones7.jpg"
+        "imageUrl": "/instalaciones7.jpg",
+        "imageHint": "instalaciones 7"
       },
       {
         "id": "facility-9",
-        "imageUrl": "/instalaciones8.jpg"
+        "imageUrl": "/instalaciones8.jpg",
+        "imageHint": "instalaciones 8"
       }
   ]
 }
